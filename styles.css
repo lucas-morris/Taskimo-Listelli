@@ -6,10 +6,10 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-weight: 900;
   margin: 0;
-  padding: 5vw;
+  padding: 2em;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   height: 100vh;
   background-color: #000;
   color: #fff;
@@ -20,15 +20,29 @@ body {
   width: 100%;
 }
 
-input[type="text"] {
+#newTask {
   width: 100%;
   font-size: 5vw;
-  padding: 0.5vw;
   background: #000;
   color: #fff;
   border: none;
   outline: none;
   margin-bottom: 2vw;
+}
+
+.task-text {
+  font-size: 20vw;
+  line-height: 1.2;
+  margin: 2em 0;
+  padding: 0.5em 0;
+  border-top: 3px solid white;
+}
+
+.task-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  margin-top: 1em;
 }
 
 button {
@@ -44,32 +58,6 @@ button {
   font-size: 2vw;
   line-height: 2.5vw;
   text-align: center;
-}
-
-button[disabled] {
-  background-color: #444;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  font-size: 20vw;
-  line-height: 1.2;
-  margin: 5vw 0;
-  position: relative;
-}
-
-li::before {
-  content: "";
-  position: absolute;
-  top: -5vw;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: #fff;
 }
 
 button.edit {
