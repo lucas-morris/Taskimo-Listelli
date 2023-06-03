@@ -6,10 +6,10 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-weight: bold;
   margin: 0;
-  padding: 2em;
+  padding: 5vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   height: 100vh;
   background-color: #000;
   color: #fff;
@@ -18,32 +18,31 @@ body {
 #app {
   text-align: left;
   width: 90vw;
-  max-width: 800px;
 }
 
 input[type="text"] {
   width: 100%;
   font-size: 5vw;
-  padding: 0.5em;
+  padding: 0.5vw;
   background: #000;
   color: #fff;
   border: 1px solid #fff;
-  margin-bottom: 2em;
+  margin-bottom: 2vw;
 }
 
 button {
   display: inline-block;
-  width: 2em;
-  height: 2em;
-  margin-left: 1em;
+  width: 2vw;
+  height: 2vw;
+  margin-left: 1vw;
   padding: 0;
   border: none;
   border-radius: 50%;
   background-color: #007BFF;
   color: white;
   cursor: pointer;
-  font-size: 0.5em;
-  line-height: 2em;
+  font-size: 1vw;
+  line-height: 2vw;
   text-align: center;
 }
 
@@ -57,9 +56,9 @@ ul {
 }
 
 li {
-  font-size: 10vw;
+  font-size: 20vw;
   line-height: 1.2;
-  margin: 2em 0;
+  margin: 5vw 0;
   position: relative;
 }
 
