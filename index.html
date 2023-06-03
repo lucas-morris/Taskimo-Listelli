@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Checklist</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div id="app">
-    <ul id="tasks">
-    </ul>
-    <input id="newTask" type="text" placeholder="add your first task" />
-  </div>
-  <script src="app.js"></script>
-</body>
-</html>
+<div id="app">
+  <ul id="tasks">
+    <li>
+      <div class="task-text" contenteditable="true">Add your first task</div>
+      <div class="task-buttons">
+        <button class="edit">&#9998;</button>
+        <button class="delete">&#10006;</button>
+        <button class="done">&#10004;</button>
+      </div>
+    </li>
+  </ul>
+  <input id="newTask" type="text" placeholder="Add new task" />
+</div>
